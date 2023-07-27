@@ -1,0 +1,26 @@
+/* register.css */
+.signup-page-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  
+}
+
+.signup-form {
+  display: grid;
+  gap: 1rem;
+  justify-items: end;
+  align-items: center;
+  background-color: yellow;
+}
+
+.signup-form input{
+  border: 2px solid black; /* 인풋 박스 테두리 표시 */
+}
+
+.signup-form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}

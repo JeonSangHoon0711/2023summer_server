@@ -1,0 +1,37 @@
+/* LoginPage.css */
+.login-page-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+.form-row {
+  display: contents;
+}
+
+input {
+  border: 2px solid blue;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid deepskyblue;
+}
+
+.form-row-login-reg{
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11rem;
+  justify-items: center;
+}
