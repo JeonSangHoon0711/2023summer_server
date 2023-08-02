@@ -1,8 +1,7 @@
 // SelfIntroduction.tsx
 import React from 'react';
 import Link from "next/link";
-import "../../style/about.css"
-
+import Header from "./header"
 const SelfIntroduction: React.FC = () => {
   const name = '홍길동';
   const age = 25;
@@ -10,21 +9,8 @@ const SelfIntroduction: React.FC = () => {
   const interests = ['코딩', '독서', '운동', '여행'];
 
   return <>
-        <button className = "login">로그인</button>
 
-<div className="blogContainer">
-    <a id="blog" href="/">블로그</a>
-</div> 
-
-<hr></hr>
-
-    <div className="menubuttonContainer">
-      <button className="categorybtn">≡</button>
-      <button className="menubtn"><Link href="/">Home</Link></button>
-      <button className="menubtn"><Link href="/pages/about">About</Link></button>
-    </div>
-<hr></hr>
-
+  <Header/>
     <div className="grid-container">
       <h1 className="title">자기소개</h1>
       <div className="name">이름: {name}</div>

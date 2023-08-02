@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "../../style/register.css";
 import { useRouter } from 'next/navigation';
-
+import Header from "./header";
 const SignupPage: React.FC = () => {
   const router = useRouter();
   const [name, setName] = useState<string>("");
@@ -24,9 +24,9 @@ const SignupPage: React.FC = () => {
     console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
   };
 
-  return (
-    <div className="signup-page-container">
-      <h1>회원가입 페이지</h1>
+  return <>
+    <Header/>
+  <div className="signup-page-container">
       <form onSubmit={handleSubmit} className={"signup-form"}>
         <div className="form-row">
           <label htmlFor="name">이름 : </label>
@@ -70,7 +70,7 @@ const SignupPage: React.FC = () => {
         <button type="submit">회원가입</button>
       </form>
     </div>
-  );
+  </>
 };
 
 export default SignupPage;

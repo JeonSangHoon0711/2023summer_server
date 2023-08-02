@@ -1,0 +1,71 @@
+.blogContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  min-height: 10vh; /* Viewport height */
+}
+
+#blog {
+  font-size: 120px;
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 3s;
+}
+
+#blog:hover {
+  color: brown;
+}
+
+.menubuttonContainer {
+  display: grid;
+  width: 100%; 
+  grid-template-columns: repeat(4, auto); /* 가로 정렬 설정 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 320px; /* 간격 조절 */
+  background-color: red;
+  
+}
+
+.categorybtn {
+  font-size: 35px;
+  width: 50px;
+
+}
+
+.login {
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: gray;
+}
+
+.writeBtn {
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  background-color: gray;
+}
+
+.categoryContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+.categoryContainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menubtn {
+  background-color: gray;
+  width: 50px;
+}

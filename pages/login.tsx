@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "../../style/login.css";
 import Link from "next/link";
-
+import Header from "./header";
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -14,9 +14,9 @@ const LoginPage: React.FC = () => {
     console.log(`Email: ${email}, Password: ${password}`);
   };
 
-  return (
-    <div className="login-page-container">
-      <h1>로그인 페이지</h1>
+  return <>
+<Header/>
+  <div className="login-page-container">
       <form onSubmit={handleSubmit} className="login-form">
         <div className="form-row">
           <label htmlFor="email">이메일:</label>
@@ -44,7 +44,8 @@ const LoginPage: React.FC = () => {
         </div>
       </form>
     </div>
-  );
+    </>
+  
 };
 
 export default LoginPage;
